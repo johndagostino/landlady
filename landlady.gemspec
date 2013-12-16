@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'easy10/version'
+require 'landlady/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "easy10"
-  spec.version       = Easy10::VERSION
+  spec.name          = "landlady"
+  spec.version       = Landlady::VERSION
   spec.authors       = ["Kym McInerney"]
   spec.email         = ["kym@holodigm.com.au"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Uses Postgres datbase name spacing to allow schema segregation multitenancy}
+  spec.summary       = %q{Super simple postgres multitenancy}
   spec.homepage      = ""
   spec.license       = "MIT"
 

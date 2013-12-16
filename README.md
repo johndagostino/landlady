@@ -1,13 +1,12 @@
+# Landlady
 
-# Easy10
-
-TODO: Write a gem description
+super easy postgres multitenancy
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'easy10'
+    gem 'landlady'
 
 And then execute:
 
@@ -15,11 +14,20 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install easy10
+    $ gem install landlady
+
+Then Install and run the migrations:
+
+    $ rails g landlady:install
+    $ rake db:migrate
+
 
 ## Usage
 
-TODO: Write usage instructions here
+### Tenant migrations
+Landlady will set up Tenants, then because she is a good land lady will update each of the tenants with the required migrations with:
+
+    $ rake tenants:db:migrate
 
 ## Contributing
 
@@ -28,5 +36,3 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
-
-
