@@ -1,6 +1,9 @@
 # Landlady
 
-super easy postgres multitenancy
+Super Easy Postgres Multitenancy
+
+Using a subdomain mapping design pattern, Landlady takes advantage of PostgresQL SCHEMA_SEARCH_PATH.
+Landlady maps tenants with complete data segregation to the required data namespace.
 
 ## Installation
 
@@ -21,13 +24,23 @@ Then Install and run the migrations:
     $ rails g landlady:install
     $ rake db:migrate
 
-
 ## Usage
+
+### Development Environments
+Once you have Tenants set up, use something like lvh.me to map back to localhost
+		
+		$ http://tenant1.lvh.me
 
 ### Tenant migrations
 Landlady will set up Tenants, then because she is a good land lady will update each of the tenants with the required migrations with:
 
     $ rake tenants:db:migrate
+
+## In the Pipeline
+
+1. Devise hooks
+2. Locale hooks
+3. Management layer
 
 ## Contributing
 

@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Landlady::VERSION
   spec.authors       = ["Kym McInerney"]
   spec.email         = ["kym@holodigm.com.au"]
-  spec.description   = %q{Uses Postgres datbase name spacing to allow schema segregation multitenancy}
+  spec.description   = %q{Using a subdomain mapping design pattern, Landlady takes advantage of PostgresQL SCHEMA_SEARCH_PATH and using naming conventions will map tenants with complete data segregation to the required data namespace.}
   spec.summary       = %q{Super simple postgres multitenancy}
   spec.homepage      = ""
   spec.license       = "MIT"
